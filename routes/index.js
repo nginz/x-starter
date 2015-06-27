@@ -7,8 +7,8 @@ var React = require('react');
 router.get('/', function(req, res, next) {
 
   var counterProps = {count: 70};
-  var Counter = React.createElement(require('../app/components/counter'), counterProps);
-  var counterComponent = React.renderToString(Counter);
+  var Counter = React.createFactory(require('../app/components/counter'));
+  var counterComponent = React.renderToString(Counter(counterProps));
 
   res.render('index', { 
     title: 'Express',
