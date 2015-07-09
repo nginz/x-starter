@@ -11,15 +11,16 @@ var gulp        = require('gulp')
     del         = require('del');
 
 var config = {
+  dist: './app/build',
   js: {
-    bundle: {entries: './app/app.jsx', debug: true},
+    bundle: {entries: './app/app.jsx', debug: true, extensions: ['.js', '.jsx']},
     source: 'app.js',
     dist: './app/build/js'
   }
 }
 
 gulp.task('clean', function(cb) {
-  del([config.build], cb);
+  del([config.dist], cb);
 });
 
 gulp.task('watchify', function() {
