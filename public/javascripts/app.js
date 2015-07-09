@@ -4,8 +4,7 @@
 var React = require('react');
 var Counter = require('./components/counter');
 
-var counterProps = JSON.parse(document.getElementById('counterProps').innerHTML);
-React.render(React.createElement(Counter, { count: counterProps.count }), document.getElementById('mount-point'));
+React.render(React.createElement(Counter, { count: 0 }), document.getElementById('mount-point'));
 
 },{"./components/counter":2,"react":158}],2:[function(require,module,exports){
 'use strict';
