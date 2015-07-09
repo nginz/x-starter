@@ -11,11 +11,11 @@ var gulp        = require('gulp')
     del         = require('del');
 
 var config = {
-  dist: './app/build',
+  dist: './public',
   js: {
     bundle: {entries: './app/app.jsx', debug: true, extensions: ['.js', '.jsx']},
     source: 'app.js',
-    dist: './app/build/js'
+    dist: './public/javascripts'
   }
 }
 
