@@ -6,3 +6,44 @@ body {
 a {
   color: #00B7FF;
 }
+
+.mount-point{
+  position: relative;
+}
+
+.example-appear {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.view-pane{
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#second-mount-point{
+  height: 200px;
+}
